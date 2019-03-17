@@ -1,0 +1,163 @@
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider .slider{
+  align-content: center;
+  width:500px;
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+   margin: 0;
+  padding: 0;
+}
+ .slides2 > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+   margin: 0 -80px 0 -40px;
+  padding: 0 -80px 0 -40px;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+
+  margin: 20px 250px 0px 250px;
+  background: #fff;
+  border: 2px solid #fff;
+  position: relative;
+  zoom: 1;
+  
+  border-radius: 4px;
+  -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+  -moz-user-select: none;
+}
+ .slider img {
+  height: 100px;
+  -moz-user-select: none;
+}
+
+
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.carousel li {
+  margin-right: 0px;
+}
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: -0px 0 0 0 ;
+  position: absolute;
+  top: 40%;
+  z-index: 1000000000;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+ color: rgba(0,0,0,0);
+}
+ 
+.flex-direction-nav   {
+  
+  display: block;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  text-align: center;
+}
+
+.flex-direction-nav:hover {
+  background: #09f;
+}
+
+
+.flex-direction-nav a:before {
+
+  
+  display: inline-block;
+  content: url("http://gnatkovsky.com.ua/files/slider_arr/images/prv.png");
+  
+color: white;
+  z-index: 100000;
+}
+.flex-direction-nav a.flex-next:before {
+  content: url('http://gnatkovsky.com.ua/files/slider_arr/images/nxt.png');
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="accesories--side"><h4>Select your product</h4><div class="product--menu"><div class="w-dyn-list"><div class="w-dyn-items"><div class="product--item w-dyn-item"><a href="#" class="product--name">OPTIO</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">AMO</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">ROSO</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">VENTO</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">OTTO</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">EXILIS</a></div><div class="product--item w-dyn-item"><a href="#" class="product--name">CANO</a></div></div></div></div></div>
+    <div class="section accesories">      
+
+      <!-- ELEMENT -->
+      
+      <div id="productOtto" class="product container w-container">
+        <!-- TODO: Render dynamically -->
+        <div class="bar">
+          <div class="product__title">
+            <h4>
+              Accessories for Otto:
+            </h4>
+          </div>
+          <div class="product__categories">
+            <button id="tubesButton" class="product__category">
+              Tubes
+              <div class="product__category-line"></div>
+            </button>
+            <button id="domesButton" class="product__category">
+              Domes
+              <div class="product__category-line"></div>
+            </button>
+            <button id="batteriesButton" class="product__category">
+              Batteries
+              <div class="product__category-line"></div>
+            </button>
+          </div>
+        </div>
+        <div class="product__container">
+          <video 
+            class="product__video"
+            preload="auto" 
+            muted
+          >
+          <source  src="4.jpg">
+          </video>
+          <div class="product__point-container">
+            <canvas width="700" height="610" class="product__video-canvas"></canvas>
+          </div>
+          <!-- Domes details -->
+          <div id="domes" class="details" data-title="Domes">
+            <div class="details__title">Domes</div>
+            <div class="details__option">
+              Choose an ear
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="left">
+                  <div class="details__label-caption">
+                     Left
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="right">
+                  <div class="details__label-caption">
+                     Right
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__option">
+              Choose size
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="small">
+                  <div class="details__label-caption">
+                     Small
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="medium">
+                  <div class="details__label-caption">
+                     Medium
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="big">
+                  <div class="details__label-caption">
+                     Big
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__price">
+              <h4 class="product--price">$</h4>
+              <h4 class="product--price details__price_margin">67.00</h4>
+              <h4 class="product--price">CAD</h4>
+            </div>
+            <div class="details__button">
+              <a id="buy-button" class="button--light w-button">Add to cart</a>
+            </div>
+          </div>
+          
+          <!-- Tubes details -->
+          <div id="tubes" class="details" data-title="Tubes">
+            <div class="details__title">Tubes</div>
+            <div class="details__option">
+              Choose an ear
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="left">
+                  <div class="details__label-caption">
+                     Left
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="right">
+                  <div class="details__label-caption">
+                     Right
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__option">
+              Choose size
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="small">
+                  <div class="details__label-caption">
+                     Small
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="medium">
+                  <div class="details__label-caption">
+                     Medium
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="big">
+                  <div class="details__label-caption">
+                     Big
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__price">
+              <h4 class="product--price">$</h4>
+              <h4 class="product--price details__price_margin">67.00</h4>
+              <h4 class="product--price">CAD</h4>
+            </div>
+            <div class="details__button">
+              <a id="buy-button" class="button--light w-button">Add to cart</a>
+            </div>
+          </div>
+          
+          <!-- Batteries details -->
+          <div id="Batteries" class="details" data-title="Batteries">
+            <div class="details__title">Batteries</div>
+            <div class="details__option">
+              Choose an ear
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="left">
+                  <div class="details__label-caption">
+                     Left
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="ear" value="right">
+                  <div class="details__label-caption">
+                     Right
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__option">
+              Choose size
+              <div class="details__inline-group">
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="small">
+                  <div class="details__label-caption">
+                     Small
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="medium">
+                  <div class="details__label-caption">
+                     Medium
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+                <label class="details__label">
+                  <input class="details__input" type="radio" name="size" value="big">
+                  <div class="details__label-caption">
+                     Big
+                  </div>
+                  <div class="details__input-check"></div>
+                </label>
+              </div>
+            </div>
+            <div class="details__price">
+              <h4 class="product--price">$</h4>
+              <h4 class="product--price details__price_margin">67.00</h4>
+              <h4 class="product--price">CAD</h4>
+            </div>
+            <div class="details__button">
+              <a id="buy-button" class="button--light w-button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- !ELEMENT -->
+    
+    </div>
+      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="dist/main.js"></script>
+  <script type="text/javascript">
+    
+function Point (options) {
+  this.x = options.x || 0;
+  this.y = options.y || 0;
+  this.targetId = options.targetId || null;
+  this.isTarget = options.isTarget || false;
+};
+
+function Product (options) {
+  var self = this;
+  var elem = options.elem;
+  var container = elem.querySelector('.product__container');
+  var stateList = options.stateList || [];
+  var containerCoords = container.getBoundingClientRect();
+  var POINT_APPEARING_DELAY = options.pointAppearingDelay || 0; // Delay before each point rendering
+  var POINT_ANIMATION_TIME = options.pointAnimationTime || 1;
+  var video = elem.querySelector('.product__video');
+  var VIDEO_OFFSET_LEFT = options.videoOffsetLeft || 0;
+  var VIDEO_OFFSET_TOP = options.videoOffsetTop || 0;
+  var VIDEO_SCALE = options.videoScale || 1;
+  var videoWidth;
+  var videoHeight;
+  var videoCanvas = elem.querySelector('.product__video-canvas');
+  var videoCtx = videoCanvas.getContext('2d');
+  var pointContainer = elem.querySelector('.product__point-container');
+  var videoAnimation;
+  // Init state
+  init();
+
+  /* ------ INTERFACE ------ */
+  
+  this.fps = options.fps || 30;
+  this.animationTimeScale = options.animationTimeScale || 1;
+  // this.zoomOut = zoomOut;
+  this._state = null;
+  this._renderState = renderState;
+  this._zoomed = false;
+  
+  Object.defineProperty(this, 'state', {
+    get: function () {
+      return this._state;
+    },
+    set: function (value) {
+      // Update ivent
+      if (stateList && stateList[value]) { 
+        var from = this._state;
+        var event = new CustomEvent('stateupdate');
+        elem.dispatchEvent(event);
+        
+        // Update state
+        this._state = stateList[value];
+        
+      // Updated ivent
+        var event = new CustomEvent('stateupdated', {
+          detail: {
+            from: from,
+            to: this._state
+          }
+        });
+      elem.dispatchEvent(event);
+    } 
+    } 
+  })
+  /* ----- EVENT SECTION ----- */
+
+  elem.addEventListener('stateupdated', function (e) {
+    // render current state
+    self._renderState();
+    
+    if (e.detail.from && e.detail.from.id == 0) {
+      var onComplete = function () {
+        setTimeout(function () {
+          videoAnimation.play();
+        }, 400);
+      }
+      slideLeft(onComplete);
+    } else {
+      videoAnimation.play();
+    }
+  });
+
+  elem.addEventListener('zoomin', function () {
+    self._zoomed = true;
+  });
+
+  elem.addEventListener('zoomout', function () {
+    self._zoomed = false;
+  });
+
+  // Set state to 0 when video will be ready
+  video.addEventListener('loadeddata', function () {
+    // Set video scale prorerties
+    videoWidth = video.videoWidth * VIDEO_SCALE;
+    videoHeight = video.videoHeight * VIDEO_SCALE;
+    self.state = 0;
+    drawFrame();
+  });
+
+  // Draw frames on canvas on time update
+  video.addEventListener('timeupdate', drawFrame);
+
+  /* ------ MAIN SECTION ------ */
+  
+  function init () {
+    video.load();
+    // Set TweenMax animation framerate
+    TweenMax.ticker.fps(this.fps);
+  };
+  
+  /* ------ UTILTTY SECTION ----- */
+  
+  function slideLeft (onStart, onComplete) {
+    removePoints();
+    // Run animation
+    TweenMax.to(pointContainer, 0.5, {
+      delay: 0.15,
+      position: 'relative',
+      left: "-17%",
+      ease: Power1.easeInOut,
+      onStart: onStart || function () {return},
+      onComplete: onComplete || function () {return}
+    });
+    // Define and dispatch "slideleft" event
+    event = new CustomEvent('slideleft');
+    elem.dispatchEvent(event);
+  };
+    
+  function setVideoAnimationValue (value, onStart, onComplete) {
+    /* Sets video end time at the specified time value */
+    // Frame number between current and new time values, multiplied on time scale value
+    var frameCount =  Math.abs(video.currentTime - value) * self.fps * self.animationTimeScale;
+    // Kill old animations
+    TweenMax.killTweensOf(video);
+    // Playing video up to a certain time
+    videoAnimation = TweenMax.to(video, frameCount, {
+      useFrames: true,
+      currentTime: value,
+      onComplete: onComplete || function () {return},
+      onStart: onStart || function () {return}
+    }).pause();
+
+    var event = new CustomEvent('videoAnimationUpdated');
+    elem.dispatchEvent(event);
+  };
+    
+  function renderState () {    
+    if (stateList.length > 0) {
+      var currentState = self.state;
+      var onComplete = function () {
+        renderPoints(currentState.points);
+
+        // End video animation event
+        event = new CustomEvent('videoAnimationEnd');
+        elem.dispatchEvent(event);
+      };
+
+      setVideoAnimationValue(currentState.timeCode, removePoints, onComplete);
+    }
+  };
+
+  function removePoints () {
+    // Search for existing points
+    var foundPoints = elem.querySelectorAll('.product__point');
+
+    if (foundPoints) {
+      // Animate point disappearing
+      TweenMax.staggerTo(foundPoints, 0.15, {
+        scale: 0,
+        opacity: 0,
+        ease: Power1.easeOut,
+        onComplete: function () {
+          foundPoints.forEach(function (point) {
+            point.remove()
+          });
+        }
+      }, 0.1);
+      // Remove all founded points
+    }
+  };
+
+  function renderPoints (points) {
+    var nodes = [];
+    
+    points.forEach(function (point) {
+      // Render point
+      node = renderPoint(point);
+      node.style.display = 'none';
+      // Append node to parent container
+      pointContainer.appendChild(node);
+      nodes.push(node);
+    });
+    // Set points animations
+    TweenMax.staggerFromTo(nodes, POINT_ANIMATION_TIME, {
+      scale:0,
+    },
+    {
+      display: 'block',
+      scale:1,
+      ease: Elastic.easeOut.config(1, 0.3)
+    },
+    POINT_APPEARING_DELAY);
+  };
+
+  function renderPoint (point) {
+    node = document.createElement('button');
+    node.className = 'product__point';
+    node.style.left = point.x + '%';
+    node.style.top = point.y + '%';
+    
+    if (point.isTarget) {
+      node.classList.add('product__point_target');
+    } else {
+      node.addEventListener('click', function () {
+        self.state = point.targetId;
+      }); 
+    }
+
+    return node;
+  };
+    
+  function drawFrame () {
+    videoCtx.drawImage(video, VIDEO_OFFSET_LEFT, VIDEO_OFFSET_TOP, videoWidth, videoHeight);
+  }
+};
+
+
+function State (options) {
+  this.id = options.id;
+  this.timeCode = options.timeCode || 0;
+  this.title = options.title || '';
+  this.points = options.points || [];
+};
+  // State 0 points
+  var state0Points = buildObjects([
+    {
+      x: 54,
+      y: 10,
+      targetId: 1
+    },
+    {
+      x: 73,
+      y: 53,
+      targetId: 2
+    },
+    {
+      x: 51.3,
+      y: 59,
+      targetId: 3
+    }
+  ], Point);
+
+  // Byild points array for tube accessory
+  var state1Points = buildObjects([
+    {
+      x: 44,
+      y: 13,
+      targetId: 1,
+      isTarget: true
+    },
+    {
+      x: 3,
+      y: 50,
+      targetId: 2,
+    },
+    {
+      x: 50.2,
+      y: 55,
+      targetId: 3,
+    }
+  ], Point);
+
+  var state2Points = buildObjects([
+    {
+      x: 47.9,
+      y: 7,
+      targetId: 1,
+    },
+    {
+      x: 67,
+      y: 50.5,
+      targetId: 2,
+      isTarget: true
+    },
+    {
+      x: 47.9,
+      y: 64,
+      targetId: 3,
+    }
+  ], Point);
+
+  var state3Points = buildObjects([
+    {
+      x: 25,
+      y: 10.5,
+      targetId: 1,
+    },
+    {
+      x: 48,
+      y: 46.3,
+      targetId: 2,
+    },
+    {
+      x: 61,
+      y: 61,
+      targetId: 3,
+      isTarget: true
+    }
+  ], Point);
+
+  // Byild categories array for the Otto product
+  var ottoStates = buildObjects([
+    {
+      id: 0,
+      timeCode: 0,
+      points: state0Points
+    },
+    {
+      id: 1,
+      timeCode: 1,
+      title: 'Tubes',
+      points: state1Points
+    },
+    {
+      id: 2,
+      timeCode: 1.867,
+      title: 'Domes',
+      points: state2Points
+    },
+    {
+      id: 3,
+      timeCode: 3.69,
+      title: 'Batteries',
+      points: state3Points
+    }
+  ], State);
+
+  window.addEventListener('load', function () {
+    // Init product "Otto"
+    var element = document.getElementById('productOtto');
+    var ottoProduct = new Product({
+      elem: element,
+      stateList: ottoStates,
+      pointAnimationTime: 1.5,
+      pointAppearingDelay: 0.1,
+      animationTimeScale: 1.75,
+      videoScale: 0.6,
+      videoOffsetTop: -50
+    });
+
+    // Set listeners on category buttons
+    var tubesButton = document.getElementById('tubesButton');
+    tubesButton.addEventListener('click', function (e) {
+      ottoProduct.state = 1;
+
+    });
+    
+    var domesButton = document.getElementById('domesButton');
+    domesButton.addEventListener('click', function (e) {
+      ottoProduct.state = 2;
+    });
+    
+    var batteriesButton = document.getElementById('batteriesButton');
+    batteriesButton.addEventListener('click', function (e) {
+      ottoProduct.state = 3;
+    });
+
+    // element.addEventListener('videoAnimationEnd', function () {
+    //   refreshDetails();
+    // });
+    element.addEventListener('stateupdated', function (e) {
+      removeActiveCategoryButton();
+      element.addEventListener('videoAnimationEnd', function () {
+        setActiveCategoryButton();
+      })
+    });
+
+    function removeActiveCategoryButton () {
+      var activeClass = 'product__category_active';
+      var active = document.querySelector('.' + activeClass);
+      
+      if (active) {
+        var line = active.querySelector('.product__category-line');
+
+        if (line) {
+          animateLineDesappearing(line);
+        } 
+        active.classList.remove(activeClass);
+      }
+    }
+
+    function setActiveCategoryButton () {
+      var activeClass = 'product__category_active';
+
+      switch (ottoProduct.state.id) {
+        case 1: {
+          tubesButton.classList.add(activeClass);
+          var line = tubesButton.querySelector('.product__category-line');
+          animateLineAppearing(line);
+          break;
+        };
+        case 2: {
+          domesButton.classList.add(activeClass);
+          var line = domesButton.querySelector('.product__category-line');
+          animateLineAppearing(line);
+          break;
+        };
+        case 3: {
+          batteriesButton.classList.add(activeClass);
+          var line = batteriesButton.querySelector('.product__category-line');
+          animateLineAppearing(line);
+          break;
+        };
+        default: {
+          break;
+        };
+      }
+    }
+
+    function animateLineDesappearing (line) {
+      if (line) {
+        TweenMax.to(line, 0.5, {
+          left: '200%',
+          display: 'block',
+          opacity: 0,
+          ease: Power2.easeOut
+        });
+      }
+    };
+
+    function animateLineAppearing (line) {
+      if (line) {
+        TweenMax.fromTo(line, 0.2, {
+          left: '-100%',
+          opacity: 0
+        },
+        {
+          left: '0%',
+          opacity: 1,
+          ease: Power2.easeIn
+        });
+      }
+    };
+
+    element.addEventListener('videoAnimationUpdated', function () {
+      refreshDetails();
+    });
+
+    function showDetails () {
+      var title = ottoProduct.state.title;
+      if (title) {
+        // Get details block of the current accessory
+        var detailsBlock = document.querySelector('[data-title='+ title +']');
+        detailsBlock.classList.add('details_active');
+        detailsBlock.style.display = 'flex';
+        
+        TweenMax.staggerFromTo(detailsBlock.children, 0.7, {
+          right: '-100%',
+          position: 'relative',
+          display:'none',
+          opacity: 0
+        },
+        {
+          right: '0%',
+          position: 'relative',
+          display:'flex',
+          ease: Elastic.easeOut.config(0.4),
+          opacity: 1
+        }, 0.05)
+      }  
+    };
+
+    function refreshDetails () {
+      var detailBlock = document.querySelector('.details_active');
+
+      if (detailBlock) {
+        detailBlock.classList.remove('details_active');
+        var onComplete = function () {
+          detailBlock.style.display = 'none';
+          element.addEventListener('videoAnimationEnd', showDetails);
+        }
+        
+        TweenMax.staggerTo(detailBlock.children, 0.7,{
+          right: '10%',
+          position: 'relative',
+          display:'none',
+          ease: Power2.easeOut,
+          opacity: 0
+        }, 
+        0.05, onComplete);
+      } else {
+        element.addEventListener('videoAnimationEnd', showDetails);
+      }
+    };
+    
+    /* ---MENU BAR ANIMATION--- */
+    var bar = element.querySelector('.bar');
+    
+    var barAnimation = TweenMax.to(bar, 0.3, {
+      left: '-30%',
+      opacity: 0
+    }).pause();
+
+    /* ---MENU BUTTONS ANIMATION--- */
+    
+    var sideButtons = this.document.querySelectorAll('.product--item');
+      
+    sideButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var name = button.querySelector('.product--name');
+        var line = document.querySelector('.product--item .product--line');
+        var active = document.querySelector('.product--item-active');
+        
+        if (active) {
+          active.classList.remove('product--item-active');
+        }
+        if (line) {
+          TweenMax.to(line, 0.1, {
+            width: '0px',
+            // marginLeft: '-10px',
+            ease: Power2.easeIn,
+            onComplete: function () {
+              line.remove();
+            }
+          });
+        }
+
+        if (!button.querySelector('.product--line'))
+        newLine = document.createElement('span');
+        newLine.className = 'product--line';
+        newLine.style.width = '0px';
+        // Insert
+        button.insertBefore(newLine, name);
+        // Animate
+        TweenMax.to(newLine, 0.5, {
+          width: '60px',
+          ease: Elastic.easeOut.config(0.4),
+        });
+        
+        button.classList.add('product--item-active')
+      });
+    });
+
+    
+    /* ---SIDEBAR AND SIDE ITEMS ANIMATION--- */
+    // var sideTitle = document.querySelector('.accesories--side');
+    var title = document.querySelector('.accesories--side h4');
+
+    // Animate title
+    TweenMax.fromTo(title, 0.7, {
+      left: '-100%',
+      position: 'relative',
+      display:'none',
+      opacity: 0
+    },
+    {
+      left: '0%',
+      position: 'relative',
+      display:'block',
+      opacity: 1,
+      ease: Elastic.easeOut.config(0.4)
+    });
+
+    // Animate sidebuttons
+    TweenMax.staggerFromTo(sideButtons, 0.7, {
+      delay: 0.05,
+      left: '-100%',
+      position: 'relative',
+      display:'none',
+      opacity: 0
+    },
+    {
+      left: '0%',
+      position: 'relative',
+      display:'flex',
+      opacity: 1,
+      ease: Elastic.easeOut.config(0.4)
+    }, 0.05)
+      
+  });
+
+
+function buildObjects (template, constructor) {
+  var result = [];
+
+  if (Array.isArray(template) && template.length>0) {
+    template.forEach(function (item) {
+      result.push(new constructor(item))
+    });
+  }
+
+  return result;
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	    <title>Искусство икебаны</title>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+    
+    
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<link rel='stylesheet' href='https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css'>
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+</head>
+<body>
+	 <nav class="navbar navbar-default" role="navigation" style=" " >
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Навигация</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Искусство икебаны</a>
+      </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul  class="nav navbar-nav">
+    <li ><a href="index.html" >Главная <span class="glyphicon glyphicon-home"></span></a></li>
+     <li ><a href="galary.html">Галерея</a></li>
+    <li class="active"><a href="advice.html">Виды икебан</a></li>
+    <li ><a  href="test.html"> Лаборатория</a></li>
+ <li><a href="rules.html">Как создать икебану</a></li>
+   <li><a href="help.html"> Помощь <span class="glyphicon glyphicon-question-sign"></a></li>
+  </ul>
+
+<div style="margin-right: -1000px; margin-top: 10px">
+<form action=""  id="search-block-form" >
+      <div class="form-item">
+        <input type="text" name="" value="" size="13" maxlength="128" placeholder="Найти..." id="text-to-find">
+      </div>
+      <div class="form-actions">
+        <input onclick=" searchTextOnPage('text-to-find'); return false;" type="submit" id="edit-submit" name="op" value="Поиск" class="form-submit">
+      </div>
+</form>
+   </div>        
+</div>
+</nav>
+
+<div class="container2" style="margin-top: 80px;margin-bottom: 20px; ">
+  <p style="color:white;"><a href="advice.html" style="color:white; margin-left: 40px">Виды икебан</a> -> Цветущий треугольник </p></div>
+<div class="container" style="margin-top: 20px">
+	
+	<div  style="text-align:center; font-size:30px">  Цветущий треугольник </div>
+<p>
+
+
+Для торжественного приема, рассчитанного на большое количество гостей, делают окибано – стелющийся букет. В принципе, это не один букет, а множество небольших, связанных в одну композицию. Для ее выполнения понадобятся емкости различной высоты. В центре стола – самая высокая, от нее двумя "рукавами" плавно струятся, снижая высоту, более низкие. <div class="pull-right"><img src="http://floweryvale.ru/images/stories/2014/12/ikebana_01.jpg" style="width:300px"></div> Получается цветочный треугольник во весь стол. Вазы не должны быть видны – их маскируют под зеленью  </p>
+
+</div><script type="text/javascript">
+function searchTextOnPage(inputId) {
+  var obj = window.document.getElementById(inputId);
+  var textToFind;
+  if (obj) {
+    textToFind = obj.value;
+  } else {
+    alert("Немогу найти текст = " + inputId);
+    return;
+  }
+  if (textToFind == "") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/g"),"<b style='background-color:rgb(150, 184, 213);padding:4px'>"+textToFind+"</b>");
+  var obj = window.document.getElementById(inputId);
+  obj.value = textToFind;
+}
+</script>
+</body>
+</html>

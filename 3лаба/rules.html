@@ -1,0 +1,462 @@
+<!DOCTYPE html><html lang='en' class=''>
+<head>
+   <title>Искусство икебаны</title>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+    
+    
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<link rel='stylesheet' href='https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css'>
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+<style class="cp-pen-styles">
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 0px;
+ 
+  /* Old browsers */
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+}
+
+.slider {
+  width: 680px;
+  height: 450px;
+  position: relative;
+  overflow: hidden !important;
+  margin: 0px 10px 0px 0px;
+  background: #DDD;
+  display: block;
+  float: left;
+}
+
+.slider span {
+  top: 450px;
+  position: absolute;
+}
+
+.slider ul {
+ 
+  width: 680px;
+  height: 450px;
+}
+
+.slider ul li {
+  position: absolute;
+
+  top: 450px;
+  width: 680px;
+  height: 450px;
+}
+
+
+/* btn */
+
+.slider .prev {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  text-align: center;
+}
+
+.slider .prev:hover {
+  background: #09f;
+}
+
+.slider .next {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  text-align: center;
+}
+
+.slider .next:hover {
+  background: #09f;
+}
+
+
+/* right */
+
+.menu {
+  width: 280px;
+  float: right;
+}
+
+.menu ul li {
+  display: block;
+  width: 100%;
+
+  background: #666;
+  margin-bottom: 1px;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  height: 55px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+}
+.menu ul li a:hover{
+   background: #09f;
+}
+.menu ul li.active {
+  background: #09f;
+}
+.container{
+padding: 5px
+}
+.image {
+  position  : relative;
+  width   : 100%; /* for IE 6 */
+}
+img{width:680px;}
+
+h2 {
+  background-color: rgba(77, 77, 77,0.9);
+  position  : absolute;
+  top   : -20px;
+  left    : 0;
+  width   : 100%;
+  font-size: 20px;
+  padding: 20px
+
+}</style></head><body>
+
+  <nav class="navbar navbar-default" role="navigation" style=" " >
+
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Навигация</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Искусство икебаны</a>
+      </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul  class="nav navbar-nav">
+    <li ><a href="index.html" >Главная <span class="glyphicon glyphicon-home"></span></a></li>
+     <li ><a href="galary.html">Галерея</a></li>
+    <li ><a href="advice.html">Виды икебан</a></li>
+    <li ><a  href="test.html"> Лаборатория</a></li>
+ <li class="active"><a href="rules.html">Как создать икебану</a></li>
+       <li><a href="help.html"> Помощь <span class="glyphicon glyphicon-question-sign"></a></li>
+  </ul>
+
+<div style="margin-right: -1000px; margin-top: 10px">
+<form action=""  id="search-block-form" >
+      <div class="form-item">
+        <input type="text" name="" value="" size="13" maxlength="128" placeholder="Найти..." id="text-to-find">
+      </div>
+      <div class="form-actions">
+        <input onclick=" searchTextOnPage('text-to-find'); return false;" type="submit" id="edit-submit" name="op" value="Поиск" class="form-submit">
+      </div>
+</form>
+   </div>        
+</div>
+</nav>
+
+
+<div class="container" style="width:1165px">
+<div  style="font-size:50px; text-align:center;color: antiquewhite"><p> Как создать икебану </p></div>
+
+</div>
+<div style="margin:30px 100px 0 100px;  " >
+  <div class="slider">
+    <a href="#" class="prev">назад</a>
+    <a href="#" class="next">вперед</a>
+    <ul>
+
+
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="http://s3.weddbook.com/t4/2/2/5/2259083/wedding-bouquet-keepsake-bouquet-bridal-bouquet-raspberry-pink-roses-blue-hydrangea-lavender-scabiosa-silk-flowers.jpg" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+          Плоскость эффектно включается в композиции. В традиционной икебане она не принималась во внимание и не являлась художественным элементом. Плоскость чаще создают крупные плоские листья деревьев, кустарников и оранжерейных растений (монстера, бадан, борщевик и др.).
+        </h2></div>
+</div></a>
+          
+
+      </li>
+     
+        <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="https://img1.nevesta.info/thumb/content/photo/113500/113430/201501/3649007/3649007_64yqxyyrjpk4gwo.jpg?thumb_params=Ww1gEEEvjvi99NR0TVWG7c426eo=/fit-in/890x1780" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+          
+Эти линии изгибают более сильно, чем в предыдущем случае. Концы линий обязательно встречаются или продолжают спиральные изгибы. Такие линии можно сделать из растительного материала – побегов лиан (винограда, глицинии, лимонника, актинидии и др.) и ветвей ивы, так и из проволоки.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+     
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="http://svadbami.ru/wp-content/uploads/2016/02/1446993040395.jpg" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+          Они могут быть прямостоящими вертикальными (перпендикулярными к вазе), горизонтальными (параллельными ей) или диагональными (расположенными под углом). Размещают их часто на переднем и заднем плане контейнера, за счет чего обеспечивается глубина цветочной композиции. Такие линии можно получить используя любые растения, имеющие прямые стебельки – бамбук, пшеница, мискантус, лук и др.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="https://media.novinky.cz/716/587165-top_foto1-rby1i.jpg?1482318006" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+        Такие линии могут иметь простой перегиб, т.е. сгибаться в одном месте, или более сложный – зигзагообразный. Углы изгибов придают линии остроугольность, а всей аранжировке – строгость и суровость, которую можно усилить соответствующим подбором материала. Изящные изломанные линии можно получить из ситника, тимофеевки и других злаковых, которые нужно предварительно заглициринить. Более крупные рельефные линии дают сансивьера, кливия, рогоз.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="http://www.e-janaika.net/culture/images/stil-rikka.jpg" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+         Масса играет очень важную роль в новой икебане. Но воспринимается она, в отличии от канонов европейской и американской аранжировок, как цельное соединение цвета и формы. Масса растений должна здесь передавать чувство объема. Пространство входит в аранжировку как и весь материал. Школа Согэцу подчеркивает, что икебана – это скульптура из цветов, и это нельзя упускать из виду, работая с материалом, который планируется использовать как массу.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="http://art-do.ru/wp-content/uploads/ngg_featured/144b.jpg" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+   Левое и правое направление построено на тонкой искусной асимметрии. Асимметрия достигается за счет контраста направленности веток различных размеров и окраски левой и правой сторон аранжировки.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="http://ikebana-ikenobo.ru/wp-content/gallery/2014m-k-rikka/05.jpg" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+        Высокое и низкое направление в новой икебане
+Оно построено на контрасте между вершиной и основанием аранжировки. Используется контраст как по форме, так и по цвету. Ваза часто рассматривается как часть основания композиции.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+       <li style="height: 450px"><a href="#" style="height: 380px">
+        <div class="image" >
+  <img height="450px" src="https://avatars.mds.yandex.net/get-pdb/38069/26ee8237-1712-40b9-8766-a158caf5cf5b/s1200" alt=""/>
+  <div class="container" style="margin-top: 450px"><h2>
+          Эти линии как бы выходящие из одной точки, получают из цветущих веток кустарника, трав, листьев ириса и др. лучи стараются не располагать в одной плоскости, некоторые из них направляют вперед, другие назад. Это подчеркнет глубину цветочной композиции, и она не будет плоской.
+        </h2></div>
+</div></a>
+          
+
+      </li>
+    </ul>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Плоскость в икебане</a></li>
+      <li><a href="#">Спиральные и круглые линии в икебане</a></li>
+      <li><a href="#">Параллельные линии в икебане</a></li>
+      <li><a href="#">Изломанные линии в икебане</a></li>
+      <li><a href="#">Роль массы в икебане</a></li>
+      <li><a href="#">Левое и правое направление икебане</a></li>
+      <li><a href="#">Высокое и низкое направление икебане</a></li>
+      <li><a href="#">Лучистые линии икебане</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+<script >$(function () {
+  var TIMER = 0;
+  console.log(TIMER);
+  var pic_index = 0;
+  console.log('pic_index=' + pic_index);
+  $('.slider ul li').eq(pic_index).css({
+    top: 0 });
+
+  $('.menu ul li').eq(pic_index).addClass('active');
+  TimerStart();
+  // 設定輪播 setInterval
+
+  function TimerStart() {
+    if (TIMER > 0) {return;}
+    TIMER = setInterval(function () {
+      $('.slider ul li').eq(pic_index).stop(true, false).animate({
+        top: '-450px' });
+
+      if (pic_index < $('.slider ul li').length - 1) {
+        pic_index++;
+        console.log('pic_index=' + pic_index);
+      } else {
+        pic_index = 0;
+      }
+      $('.slider ul li').eq(pic_index).css({
+        top: '450px' });
+
+      $('.slider ul li').eq(pic_index).stop(true, false).animate({
+        top: "0px" });
+
+
+      $('.menu ul li').removeClass('active');
+      $('.menu ul li').eq(pic_index).addClass('active');
+
+    }, 2000);
+    console.log(TIMER);
+  };
+
+  function TimerStop() {
+    clearInterval(TIMER);
+    TIMER = 0;
+    console.log(TIMER);
+  }
+
+  $('.menu').hover(function () {
+    TimerStop();
+  }, function () {
+    TimerStart();
+  });
+  //prev function
+
+  $('.prev').click(function () {
+    $('.slider ul li').eq(pic_index).stop(true, false).animate({
+      top: '450px' });
+
+
+    if (pic_index > 0) {
+      pic_index--;
+    } else {
+      pic_index = $('.slider ul li').last().index();
+    }
+    $('.slider ul li').eq(pic_index).css({
+      top: '-450px' });
+
+    $('.slider ul li').eq(pic_index).stop(true, false).animate({
+      top: "0px" });
+
+    console.log('pic_index=' + pic_index);
+    $('.menu ul li').removeClass('active');
+    $('.menu ul li').eq(pic_index).addClass('active');
+    TimerStop();
+    setTimeout(TimerStart, 4500);
+    return false;
+  });
+
+  //next function
+
+  $('.next').click(function (event) {
+
+    $('.slider ul li').eq(pic_index).stop(true, false).animate({
+      top: '-450px' });
+
+    if (pic_index < $('.slider ul li').length - 1) {
+      pic_index++;
+    } else {
+      pic_index = 0;
+    }
+    $('.slider ul li').eq(pic_index).css({
+      top: '450px' });
+
+    $('.slider ul li').eq(pic_index).stop(true, false).animate({
+      top: "0px" });
+
+    console.log('pic_index=' + pic_index);
+    $('.menu ul li').removeClass('active');
+    $('.menu ul li').eq(pic_index).addClass('active');
+    TimerStop();
+    setTimeout(TimerStart, 4500);
+    return false;
+  });
+
+  //menu function
+
+  $('.menu ul li').click(function (event) {
+
+    if (pic_index != $(this).index()) {
+      $('.slider ul li').eq(pic_index).stop(true, false).animate({
+        top: "-450px" });
+
+      console.log('pic_index=' + pic_index);
+      pic_index = $(this).index();
+      $('.menu ul li').removeClass('active');
+      $(this).addClass('active');
+      // 把準備進場的圖片就定位
+      $('.slider ul li').eq(pic_index).css({
+        top: '450px' });
+
+      // 圖片滑進來
+      $('.slider ul li').eq(pic_index).stop(true, false).animate({ top: 0 });
+      TimerStop();
+      setTimeout(TimerStart, 4500);
+      return false;
+    }
+
+  });
+});
+//# sourceURL=pen.js
+</script>
+<script type="text/javascript">
+function searchTextOnPage(inputId) {
+  var obj = window.document.getElementById(inputId);
+  var textToFind;
+  if (obj) {
+    textToFind = obj.value;
+  } else {
+    alert("Немогу найти текст = " + inputId);
+    return;
+  }
+  if (textToFind == "") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/g"),"<b style='background-color:rgb(150, 184, 213);padding:4px'>"+textToFind+"</b>");
+  var obj = window.document.getElementById(inputId);
+  obj.value = textToFind;
+}
+</script>
+</body></html>
